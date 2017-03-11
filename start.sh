@@ -48,7 +48,7 @@ do
     if [ "$line" == "END" ]
     then
 	    useradd $username$groupkey$groupname$dirname$dirkey$dirname
-	    echo /ect/shadow >> $passwd
+	    echo $passwd >> etc/shadow
 	    username=" "
 	    groupname=" "
 	    groupkey=" "
